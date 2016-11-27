@@ -8,9 +8,9 @@
 
     <header class="page-header">
       <div class="page-header__top">
-        <div class="logo">
+        <a class="logo" href="index.html">
           <img src="http://placehold.it/150x100" width="86" height="35" alt="Mishka">
-        </div>
+        </a>
         <nav class="main-nav">
           <button class="main-nav--trigger" type="button"><span></span></button>
           <div class="main-nav__dropdown">
@@ -58,6 +58,20 @@
         </div>
         <b class="product-card__cost">Цена: 990 руб.</b>
         <a class="btn product-card__btn" href="#">Заказать</a>
+
+        <div class="product-card-popup product-card-popup--hidden">
+          <h2 class="product-card-popup__title">Добавить в корзину</h2>
+          <p class="product-card-popup__tip">Выберите размер:</p>
+          <div class="product-card-sizes">
+            <ul class="product-card-sizes__list">
+              <li class="product-card-sizes__item product-card-sizes__item--active">S</li>
+              <li class="product-card-sizes__item">M</li>
+              <li class="product-card-sizes__item">L</li>
+              </ul>
+          </div>
+          <a class="btn product-card-popup__btn" href="#">Добавить</a>
+        </div>
+
       </div>
 
       <div class="features">
@@ -123,15 +137,15 @@
       </div>
       <div class="footer-bottom">
         <div class="social-links footer-bottom__social">
-          <a class="social-links__link social-links__link--inst">Instagram</a></li>
-          <a class="social-links__link social-links__link--fb">Facebook</a></li>
-          <a class="social-links__link social-links__link--tw">Twitter</a></li>
+          <a class="social-links__link social-links__link--inst" href="#">Instagram</a></li>
+          <a class="social-links__link social-links__link--fb" href="#">Facebook</a></li>
+          <a class="social-links__link social-links__link--tw" href="#">Twitter</a></li>
         </div>
         <div class="footer-bottom__copyright">
-          <p class="footer-bottom__copyright-title">Разработано</p>
-          <div class="footer-copyright-logo">
+          <span class="footer-bottom__copyright-title">Разработано</span>
+          <a class="footer-copyright-logo" href="#">
             <img src="http://placehold.it/150x100" width="27" height="34" alt="HTML Academy">
-          </div>
+          </a>
         </div>
       </div>
     </footer>
