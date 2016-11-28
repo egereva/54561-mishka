@@ -12,7 +12,7 @@
           <img src="http://placehold.it/150x100" width="86" height="35" alt="Mishka">
         </a>
         <nav class="main-nav">
-          <button class="main-nav--trigger" type="button"><span></span></button>
+          <button class="main-nav--trigger" type="button"></button>
           <div class="main-nav__dropdown">
             <ul class="main-nav__list">
               <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
@@ -65,28 +65,12 @@
       </div>
 
       <div class="about-production">
-        <div class="about-production__header">
-          <h2 class="about-production__title">Процесс производства</h2>
-        </div>
+        <h2 class="about-production__title">Процесс производства</h2>
         <div class="about-production__video"><!--вставила заглушку для обозначения видео, пока не разобралась как его в итоге верстать. будет просто картинка?-->
           <img src="http://placehold.it/150x100" width="260" height="150" alt="Процесс производства">
         </div>
         <p class="about-production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="btn about-production__order-btn" href="#">Сделать заказ</a>
-
-        <div class="product-card-popup product-card-popup--hidden">
-          <h2 class="product-card-popup__title">Добавить в корзину</h2>
-          <p class="product-card-popup__tip">Выберите размер:</p>
-          <div class="product-card-sizes">
-            <ul class="product-card-sizes__list">
-              <li class="product-card-sizes__item product-card-sizes__item--active">S</li>
-              <li class="product-card-sizes__item">M</li>
-              <li class="product-card-sizes__item">L</li>
-              </ul>
-          </div>
-          <a class="btn product-card-popup__btn" href="#">Добавить</a>
-        </div>
-
       </div>
 
     </div>
@@ -106,6 +90,31 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup popup--hidden">
+      <form class="product-popup-form" action="" method="post">
+        <h2 class="product-popup-form__title">Добавить в корзину</h2>
+        <p class="product-popup-form__tip">Выберите размер:</p>
+        <ul class="product-popup-form__list">
+          <li class="product-popup-form__item product-card-sizes__item--active">
+            <label class="label-field-size">
+              <input class="radio-field-size radio-field-size--active" type="radio" name="size" value="s" cheked>S
+            </label>
+          </li>
+          <li class="product-popup-form__item">
+            <label class="label-field-size">
+              <input class="radio-field" type="radio" name="size" value="m">M
+            </label>
+          </li>
+          <li class="product-popup-form__item">
+            <label class="label-field-size">
+              <input class="radio-field" type="radio" name="size" value="l">L
+            </label>
+          </li>
+        </ul>
+        <input class="btn product-popup-form__btn" type="submit" value="Добавить">
+      </form>
+    </div>
 
   </body>
 </html>
