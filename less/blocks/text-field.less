@@ -1,0 +1,65 @@
+.text-field {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0;
+  padding-bottom: 15px;
+
+  font-size: 17px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000000;
+  color: @color-font-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+  .text-field:-ms-input-placeholder,
+  .text-field::-ms-input-placeholder,
+  .text-field::-webkit-input-placeholder,
+  .text-field:-moz-placeholder,
+  .text-field::-moz-placeholder {
+    opacity: 0.3;
+  }
+
+  .text-field--phone {
+      background-image: url('../../img/icon-phone.svg');
+      background-repeat: no-repeat;
+      background-position: 97% 0;
+  }
+
+  .text-field--email {
+      background-image: url('../../img/icon-mail.svg');
+      background-repeat: no-repeat;
+      background-position: 98% -5px;
+  }
+
+@media @tablet-widths {
+
+  .text-field {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 19px;
+  }
+
+  .text-field--phone {
+      background-position: 95% 0;
+  }
+
+  .text-field--email {
+      background-position: 95% -5px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .text-field--phone {
+      background-position: 100% 0;
+  }
+
+  .text-field--email {
+      background-position: 100% -5px;
+  }
+}

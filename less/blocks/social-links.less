@@ -1,0 +1,41 @@
+.social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid @border-block;
+
+  &__link {
+    padding: 0 20px;
+
+    display: block;
+    font-size: 0;
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+
+      &:before {
+      content: url('../img/icon-insta.svg');
+     }
+    }
+
+    &--fb {
+      height: 32px;
+
+      &:before {
+      content: url('../img/icon-fb.svg');
+     }
+    }
+
+    &--tw {
+      width: 26px;
+      height: 26px;
+
+      &:before {
+      content: url('../img/icon-twitter.svg');
+    }
+    }
+  }
+}

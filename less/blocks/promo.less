@@ -1,0 +1,135 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+
+  background: url('../img/hero-mobile@1x.jpg') no-repeat center top;
+  background-color: #f9f9f9;
+}
+
+.promo__title {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 122px;
+
+  max-width: @mobile-content-width;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-category-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+
+  list-style: none;
+}
+
+.product-category-nav__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 103px;
+  padding-left: 30px;
+  padding-right: 180px;
+
+  cursor: pointer;
+
+  &--decor {
+
+    background-color: @bg-lightgreen;
+    &::after {
+      content: url("../img/icon-interior.svg");
+      position: absolute;
+      right: 35px;
+
+      opacity: 0.2;
+    }
+  }
+
+  &--toys {
+      background-color: @bg-darkgreen;
+
+    &::after {
+      content: url("../img/icon-toy.svg");
+      position: absolute;
+      right: 35px;
+
+      opacity: 0.2;
+    }
+  }
+}
+
+.product-category-nav__link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @color-font-white;
+}
+
+@media @tablet-widths {
+
+  .promo {
+    padding-top: 160px;
+
+  }
+
+  .promo__title {
+    margin-bottom: 370px;
+
+    max-width: 530px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-category-nav__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: @tablet-content-width;
+    margin: 0 auto;
+  }
+
+  .product-category-nav__item {
+    width: 50%;
+    min-height: 119px;
+    padding-left: 35px;
+    padding-right: 195px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}
+
+@media @desktop-widths {
+  .product-category-nav__list {
+    width: @desktop-content-width;
+    margin: 0 auto;
+  }
+
+  .product-category-nav__item {
+    padding-right: 350px;
+}
+
+  .promo__title {
+    margin-bottom: 350px;
+
+    max-width: 700px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
