@@ -1,0 +1,30 @@
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+
+  width: @mobile-content-width;
+  margin: 0 auto;
+}
+
+@media @tablet-widths-only {
+
+  .catalog-list {
+    width: @tablet-content-width;
+  }
+
+  .catalog-item__desc {
+    width: 50%;
+  }
+}
+
+
+@media @desktop-widths {
+  .catalog-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: @desktop-content-width;
+    margin: 0 auto;
+  }
+}
