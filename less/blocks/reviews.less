@@ -51,24 +51,47 @@
 
 
 .btn.reviews__control-item {
-    width: 130px;
-    margin: 0;
-    padding: 0;
+  position: relative;
 
-    border: none;
-    outline: none;
-    border: 1px solid @border-block;
+  box-sizing: border-box;
+  width: 130px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
 
-    font-size: 0;
+  border: none;
+  outline: none;
+  border: 1px solid @border-block;
+  background-color: transparent;
+  fill: #000000;
+
+  font-size: 0;
+
+  &----prev {
+    border-right: none;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.2);
+  }
 }
 
-.reviews__control--prev {
-  background: url("../img/icon-left-arrow.svg") no-repeat center;
+.reviews__control-item-icon {
+  position: absolute;
+  top: 11px;
+  right: 40px;
+
+  width: 50px;
+  height: 26px;
+
 }
 
-.reviews__control--next {
-  background: url('../img/icon-right-arrow.svg') no-repeat center;
-}
+
 
 @media @tablet-widths {
   .reviews {

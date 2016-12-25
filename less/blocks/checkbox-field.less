@@ -26,6 +26,19 @@
   }
 }
 
+.order-form__group .checkbox-field + .label-field:hover {
+  &::before {
+    border: 2px solid @bg-lightgreen;
+  }
+}
+
+.order-form__group .checkbox-field + .label-field:active {
+  &::before {
+    border: 2px solid #c7c7c7;
+}
+
+}
+
 .order-form__group .checkbox-field:checked + .label-field::after {
   content: '';
 

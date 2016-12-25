@@ -21,14 +21,35 @@
   justify-content: center;
 
   min-height: 79px;
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright-logo {
+  position: absolute;
+  right: 0;
+  top: -6px;
+  width: 27px;
+  height: 34px;
+
 }
 
 .page-footer__copyright-title {
-  margin-right: 30px;
+  position: relative;
+
+  padding-right: 57px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
 }
+
 
 .page-footer__social {
   min-height: 79px;
@@ -36,7 +57,25 @@
 
 @media @tablet-widths {
   .page-footer__logo-link {
+    position: relative;
     display: flex;
+  }
+
+  .page-footer__logo-link-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+
+    width: 102px;
+    height: 34px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .page-footer-wrapper {

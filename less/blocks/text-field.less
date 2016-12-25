@@ -11,6 +11,14 @@
   border-bottom: 2px solid #000000;
   color: @color-font-gray;
 
+  &:hover {
+      border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus {
+      border-bottom: 2px solid #62d1ba;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -23,17 +31,30 @@
     opacity: 0.3;
   }
 
-  .text-field--phone {
-      background-image: url('../img/icon-phone.svg');
-      background-repeat: no-repeat;
-      background-position: 97% 0;
+.text-field__label-icon {
+  position: relative;
+
+  fill: rgba(0, 0, 0, 0.3);
+
+}
+
+.text-field:hover ~ .text-field__label-icon {
+  fill: #62d1ba;
+}
+.text-field:focus ~ .text-field__label-icon {
+    fill: #62d1ba;
   }
 
-  .text-field--email {
-      background-image: url('../img/icon-mail.svg');
-      background-repeat: no-repeat;
-      background-position: 98% -5px;
-  }
+
+.text-field__label-icon-item {
+  position: absolute;
+  right: 8px;
+  bottom: 14px;
+
+  width: 25px;
+  height: 24px;
+}
+
 
 @media @tablet-widths {
 

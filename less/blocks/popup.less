@@ -47,11 +47,19 @@
   user-select: none;
 
   color: @color-font-gray;
-  border: 1px solid #cccccc;
+  border: 2px solid #ececec;
 
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:active {
+    border: 2px solid @bg-lightgreen;
+  }
 }
 .radio-field:checked  + .label-field-size {
     border: 2px solid @bg-lightgreen;

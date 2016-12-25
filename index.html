@@ -51,7 +51,7 @@
       </div>
     </header>
 
-    <div class="page-content">
+
       <section class="promo">
         <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
         <ul class="product-category-nav__list">
@@ -152,14 +152,21 @@
             </footer>
           </blockquote>
           <div class="reviews__control">
-            <button class="btn reviews__control-item reviews__control--prev" disabled>Назад</button>
-            <button class="btn reviews__control-item reviews__control--next">Вперед</button>
+            <button class="btn reviews__control-item reviews__control--prev" disabled>Назад
+              <svg class="reviews__control-item-icon  reviews__control-item-icon--left">
+                  <use xlink:href="#icon-left-arrow"></use>
+              </svg>
+            </button>
+            <button class="btn reviews__control-item reviews__control--next">Вперед
+              <svg class="reviews__control-item-icon  reviews__control-item-icon--right">
+                  <use xlink:href="#icon-right-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <a class="btn reviews__submit" href="#">Написать</a>
       </div>
-    </div>
-    </section>
+      </section>
 
     <hr class="section-separator">
 
@@ -184,19 +191,38 @@
     <footer class="page-footer">
       <div class="page-footer-wrapper">
         <a class="page-footer__logo-link" href="index.html">
-          <img src="img/logo-mobile.svg" alt="Mishka">
+          <svg class="page-footer__logo-link-icon">
+              <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
         <div class="social-links page-footer__social">
-          <a class="social-links__link social-links__link--inst" href="#">Instagram</a></li>
-          <a class="social-links__link social-links__link--fb" href="#">Facebook</a></li>
-          <a class="social-links__link social-links__link--tw" href="#">Twitter</a></li>
-        </div>
-        <div class="page-footer__copyright">
-          <span class="page-footer__copyright-title">Разработано</span>
-          <a class="footer-copyright-logo" href="#">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          <a class="social-links__link social-links__link--inst" href="#">Instagram
+            <svg class="social-links__link-icon  social-links__link-icon--inst">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
           </a>
+        </li>
+          <a class="social-links__link social-links__link--fb" href="#">Facebook
+            <svg class="social-links__link-icon  social-links__link-icon--fb">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+          <a class="social-links__link social-links__link--tw" href="#">Twitter
+            <svg class="social-links__link-icon  social-links__link-icon--tw">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
         </div>
+        <a class="page-footer__copyright" href="#">
+          <span class="page-footer__copyright-title">Разработано
+            <svg class="page-footer__copyright-logo">
+                <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </span>
+        </a>
+
       </div>
     </footer>
 

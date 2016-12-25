@@ -7,35 +7,53 @@
   border-bottom: 1px solid @border-block;
 
   &__link {
+    position: relative;
     padding: 0 20px;
 
     display: block;
     font-size: 0;
 
     &--inst {
-      width: 23px;
-      height: 23px;
-
-      &:before {
-      content: url('../img/icon-insta.svg');
-      }
+      width: 22px;
+      height: 21px;
     }
 
     &--fb {
-      height: 32px;
-
-      &:before {
-      content: url('../img/icon-fb.svg');
-      }
+      width: 15px;
+      height: 28px;
     }
 
     &--tw {
-      width: 26px;
-      height: 26px;
+      width: 23px;
+      height: 20px;
+    }
 
-      &:before {
-      content: url('../img/icon-twitter.svg');
+    &:hover {
+      fill: #46c1ae;
     }
+
+    &:active {
+      opacity: 0.3;
     }
+
+    }
+}
+
+.social-links__link-icon {
+  position: absolute;
+  &--inst {
+    width: 22px;
+    height: 21px;
   }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--tw {
+    width: 23px;
+    height: 20px;
+  }
+
 }

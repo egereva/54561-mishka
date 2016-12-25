@@ -27,7 +27,21 @@
     height: 36px;
     border-radius: 50%;
     border: 2px solid @color-font-gray;
+
   }
+}
+
+.order-form__group .radio-field + .label-field:hover {
+  &::before {
+    border: 2px solid @bg-lightgreen;
+  }
+}
+
+.order-form__group .radio-field + .label-field:active {
+  &::before {
+    border: 2px solid #c7c7c7;
+}
+
 }
 
 .order-form__group .radio-field:checked + .label-field::after {
