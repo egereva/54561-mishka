@@ -4,7 +4,7 @@
 }
 
 .page-header__wrapper {
-  min-height: 80px;
+  min-height: 79px;
   display: flex;
   flex-direction: column;
 }
@@ -21,6 +21,16 @@
   display: flex;
   margin: auto;
   align-items: center;
+  width: 90px;
+  height: 40px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__delivery-info  {
@@ -30,7 +40,7 @@
 @media @tablet-widths {
   .page-header {
 
-    height: 88px;
+    min-height: 88px;
   }
 
   .page-header__wrapper {
@@ -47,7 +57,7 @@
 
   .page-header__logo {
     flex-grow: 1;
-
+    align-items: center;
   }
 
   .page-header__logo-link {
@@ -55,9 +65,9 @@
     align-items: center;
     margin:0;
 
-    & img {
-      margin-right: auto;
-    }
+    width: 112px;
+    height: 46px;
+
   }
 
   .page-header__delivery-info  {
@@ -98,6 +108,9 @@
     display: flex;
     align-items: center;
     margin:auto;
+
+    width: 148px;
+    height: 73px;
   }
 
 }

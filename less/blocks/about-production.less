@@ -5,7 +5,7 @@
   padding-bottom: 35px;
   margin-bottom: 58px;
 
-  border: 1px solid @border-block;
+  outline: 1px solid @border-block;
 }
 
 .about-production-wrapper {
@@ -42,8 +42,8 @@
 
 .about-production__video {
   position: relative;
-  width: 100%;
-  min-height: 150px;
+  width: 260px;
+  height: 150px;
 
   &::before {
     content: '';
@@ -88,7 +88,8 @@
   .about-production__video {
     order: 1;
 
-    min-height: 455px;
+    width: 668px;
+    height: 455px;
     margin-bottom: 40px;
 
     &::before {
@@ -153,6 +154,11 @@
 
     width: 683px;
     height: 455px;
+
+    &::before {
+      left: 284px;
+      top: 189px;
+    }
   }
 
   .about-production__title {

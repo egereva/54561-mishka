@@ -15,6 +15,7 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+  color: @color-font-black;
 
 }
 
@@ -28,6 +29,10 @@
   text-transform: uppercase;
   color: @color-font-lightgreen;
 
+}
+.product-card__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__discription {
@@ -58,8 +63,8 @@
 }
 
 .product-card__photo {
-  width: 100%;
-  min-height: 315px;
+  width: 260px;
+  height: 315px;
   margin-bottom: 20px;
 }
 
@@ -75,44 +80,46 @@
 
 @media @tablet-widths {
   .product-card {
-    position: relative;
-
     display: flex;
-    flex-wrap: wrap;
     width: @tablet-content-width;
     margin: 0 auto;
   }
 
+  .product-card__content {
+    position: relative;
+
+    justify-content: space-between;
+
+    min-height: 404px;
+    padding-right: 378px;
+  }
+
   .product-card__properties {
-    width: 290px;
-    margin-bottom: 55px;
+
   }
 
   .product-card__photo {
     position: absolute;
-    top: 154px;
+    top: 0;
     right: 0;
-    width: 50%;
     margin: 0;
+
+    width: 333px;
+    height: 404px;
   }
 
   .product-card__discription {
-    width: 290px;
-    margin-bottom: 40px;
-
     font-size: 17px;
     line-height: 30px;
   }
 
   .product-card__cost {
-    width: 290px;
-    margin-bottom: 35px;
-
     font-size: 20px;
   }
 
+
   .product-card__title {
-    padding-top: 50px;
+    padding-top: 35px;
     padding-bottom: 60px;
     width: 100%;
 
@@ -146,22 +153,29 @@
 @media @desktop-widths {
 
   .product-card {
-    position: relative;
-
     justify-content: flex-end;
 
     width: 874px;
     min-height: 636px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 55px;
     padding-left: 176px;
 
   }
 
+  .product-card__content {
+    min-height: 470px;
+    padding-right: 582px;
+  }
+
   .product-card__photo {
-    top: 75px;
+    top: initial;
+    bottom: 0;
     right: 0;
     z-index: -1;
+
+    width: 525px;
+    height: 636px;
   }
 
 
@@ -173,9 +187,13 @@
     margin-bottom: 60px;
   }
 
+  .product-card__cost {
+    margin-bottom: 34px;
+  }
+
   .product-card__title {
     position: relative;
-    padding: 60px 0;
+    padding: 40px 0;
     font-size: 53px;
     line-height: 57px;
 
@@ -187,7 +205,7 @@
       content: 'Товар недели';
       position: absolute;
       left: -130px;
-      bottom: 69px;
+      bottom: 50px;
       width: 80px;
 
       font-size: 17px;

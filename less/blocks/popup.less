@@ -1,6 +1,6 @@
 
 .popup {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: @mobile-content-width;
   margin: 0 auto;
@@ -74,14 +74,13 @@
 }
 
 .product-popup-form__btn {
+  width: @mobile-content-width;
   border: none;
   outline: none;
   background-color: @bg-lightgreen;
   color: @color-font-white;
 }
-.popup--hidden {
-  display: none;
-}
+
 
 @media @tablet-widths {
   .popup {
