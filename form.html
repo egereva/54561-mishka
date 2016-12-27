@@ -2,8 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -46,8 +52,8 @@
               </a></li>
           </ul>
 
+          <span class="main-nav__delivery-info">Бесплатная доставка по России</span>
         </nav>
-        <span class="page-header__delivery-info">Бесплатная доставка по России</span>
       </div>
     </header>
 
@@ -76,7 +82,7 @@
             <div class="order-form__group-wrapper order-form__group-wrapper--color">
               <input class="checkbox-field" id="white" type="checkbox" name="color" value="white" checked><label class="label-field" for="white">Белый</label>
               <input class="checkbox-field" id="grey" type="checkbox" name="color" value="grey" checked><label class="label-field" for="grey">Серый</label>
-              <input class="checkbox-field" id="tiffany" type="checkbox" name="color" value="tiffany"><label class="label-field" for="tiffany">"Тиффани"</label>
+              <input class="checkbox-field" id="tiffany" type="checkbox" name="color" value="tiffany"><label class="label-field" for="tiffany">&laquo;Тиффани&raquo;</label>
               <input class="checkbox-field" id="black" type="checkbox" name="color" value="black"><label class="label-field" for="black">Черный</label>
               <input class="checkbox-field" id="pink" type="checkbox" name="color" value="pink"><label class="label-field" for="pink">Розовый</label>
               <input class="checkbox-field" id="orange" type="checkbox" name="color" value="orange"><label class="label-field" for="orange">Оранжевый</label>
@@ -110,7 +116,7 @@
             <div class="order-form__group-wrapper order-form__wrapper--desktop-minwidth">
                 <input class="text-field text-field--phone  order-form__group--fill" type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX*">
                 <label class="text-field__label-icon">
-                  <svg class="text-field__label-icon-item text-field__label-icon-item--phone">
+                  <svg class="text-field__label-icon-item text-field__label-icon-item--phone" width="25" height="24">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
                 </label>
@@ -124,7 +130,7 @@
             <div class="order-form__group-wrapper order-form__wrapper--desktop-minwidth">
               <input class="text-field text-field--email  order-form__group--fill" type="email" name="email" id="email" placeholder="Ваш Email*">
               <label class="text-field__label-icon">
-                <svg class="text-field__label-icon-item text-field__label-icon-item--mail">
+                <svg class="text-field__label-icon-item text-field__label-icon-item--mail" width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
               </label>
@@ -142,7 +148,7 @@
         </div>
 
         <div class="order-form__group-flexwrapper">
-          <p class="order-form__tip-bottom">*Поля обязательные для заполнения</p>
+          <p class="order-form__tip-bottom">*Поля обязательны для заполнения</p>
           <input class="btn order-form__btn" type="submit" value="Отправить заказ">
         </div>
 

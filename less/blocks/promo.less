@@ -1,10 +1,12 @@
 .promo {
   display: flex;
   flex-direction: column;
-  padding-top: 89px;
+  padding-top: 70px;
 
-  background: url('../img/hero-mobile@1x.jpg') no-repeat center top;
+
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center top;
   background-color: #f9f9f9;
+  background-position-y: -20px;
 
   @media @retina {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -17,7 +19,7 @@
   align-self: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 122px;
+  margin-bottom: 123px;
 
   max-width: @mobile-content-width;
 
@@ -53,7 +55,7 @@
   display: flex;
   align-items: center;
 
-  padding: 30px 0;
+  padding: 21px 0;
   padding-left: 30px;
   padding-right: 180px;
 
@@ -62,10 +64,10 @@
   color: @color-font-white;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 23px;
+    right: 20px;
     width: 61px;
     height: 61px;
 
@@ -118,14 +120,30 @@
 
 }
 
+.product-card__photo img {
+  width: 260px;
+  height: 315px;
+
+  @media @tablet-widths {
+    width: 333px;
+    height: 404px;
+  }
+
+  @media @desktop-widths {
+    width: 525px;
+    height: 636px;
+  }
+}
+
 @media @tablet-widths {
 
   .promo {
     position: relative;
 
-    padding-top: 160px;
+    padding-top: 155px;
 
-    background-image: url('../img/hero-desktop@1x.jpg');
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position-y: 0;
 
     @media @retina {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -173,15 +191,34 @@
   }
 
   .product-category-nav__link {
+    padding-top: 30px;
+    padding-left: 35px;
     padding-bottom: 40px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: 32px;
+      right: 15px;
+    }
+
+    &--toys {
+      &::after {
+        right: 30px;
+      }
+    }
   }
 
 }
 
 @media @desktop-widths {
+
+  .promo {
+    padding-top: 150px;
+
+  }
+
   .product-category-nav__list {
     width: @desktop-content-width;
     margin: 0 auto;
@@ -192,7 +229,7 @@
 }
 
   .promo__title {
-    margin-bottom: 350px;
+    margin-bottom: 360px;
 
     max-width: 700px;
 

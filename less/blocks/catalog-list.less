@@ -4,6 +4,7 @@
 
   width: @mobile-content-width;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 @media @tablet-widths-only {
@@ -20,9 +21,11 @@
   .catalog-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
     width: @desktop-content-width;
     margin: 0 auto;
+    padding-top: 0;
   }
 }

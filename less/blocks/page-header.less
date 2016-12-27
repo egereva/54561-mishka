@@ -21,8 +21,7 @@
   display: flex;
   margin: auto;
   align-items: center;
-  width: 90px;
-  height: 40px;
+  min-height: 79px;
 
   &:hover {
     opacity: 0.6;
@@ -33,8 +32,19 @@
   }
 }
 
-.page-header__delivery-info  {
-  display: none;
+.page-header__logo-link img {
+  width: 86px;
+  height: 35px;
+
+  @media @tablet-widths {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media @desktop-widths {
+    width: 149px;
+    height: 72px;
+}
 }
 
 @media @tablet-widths {
@@ -70,22 +80,7 @@
 
   }
 
-  .page-header__delivery-info  {
-    display: inline-block;
-  }
 
-  .page-header__delivery-info  {
-    position: absolute;
-    top: 110px;
-    right: 0;
-    z-index: 1000;
-
-    display: block;
-
-    font-size: 15px;
-    line-height: 24px;
-    color: @color-font-gray;
-  }
 
 }
 
@@ -108,7 +103,7 @@
   .page-header__logo-link {
     display: flex;
     align-items: center;
-    margin:auto;
+    margin-left: 40px;
 
     width: 148px;
     height: 73px;
