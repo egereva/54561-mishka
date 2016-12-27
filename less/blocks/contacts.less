@@ -64,10 +64,6 @@ width: 77px;
   background: url("../img/map-mobile@1x.jpg") no-repeat center top;
   background-size: 320px auto;
 
-  @media @retina {
-    background: url("../img/map-mobile@2x.jpg") no-repeat center top;
-    background-size: 320px auto;
-  }
 }
 
 .btn.contacts__submit {
@@ -124,10 +120,6 @@ width: 77px;
     background: url("../img/map-tablet@1x.jpg") no-repeat center top;
     background-size: 768px auto;
 
-    @media @retina {
-      background: url("../img/map-tablet@2x.jpg") no-repeat center top;
-      background-size: 768px auto;
-    }
   }
 
   .btn.contacts__submit {
@@ -160,6 +152,9 @@ width: 77px;
     width: 50%;
     z-index: -1;
     margin-bottom: 0;
+
+    background: url("../img/map-desktop@1x.jpg") no-repeat center top;
+    background-size: 525px auto;
   }
 
   .contacts__list-block {
@@ -201,4 +196,25 @@ width: 77px;
     }
   }
 
+}
+
+@media @retina-mobile {
+  .contacts__map {
+  background: url("../img/map-mobile@2x.jpg") no-repeat center top;
+  background-size: 320px auto;
+}
+}
+
+@media @retina-tablet {
+  .contacts__map {
+    background: url("../img/map-tablet@2x.jpg") no-repeat center top;
+    background-size: 768px auto;
+}
+}
+
+@media @retina-desktop {
+  .contacts__map {
+    background: url("../img/map-desktop@2x.jpg") no-repeat center top;
+    background-size: 525px auto;
+}
 }

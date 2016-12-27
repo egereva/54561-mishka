@@ -92,7 +92,6 @@
 }
 
 
-
 @media @tablet-widths {
   .reviews {
     width: 778px;
@@ -103,11 +102,6 @@
     background-repeat: no-repeat;
     background-position: left top;
 
-
-    @media @retina {
-      background-image: url("../img/review@2x.jpg");
-      background-size: 350px auto;
-    }
   }
 
   .reviews__wrapper {
@@ -230,4 +224,12 @@
     margin-top: 45px;
   }
 
+}
+
+
+@media @retina-tablet {
+.reviews {
+background-image: url("../img/review@2x.jpg");
+background-size: 350px auto;
+}
 }
